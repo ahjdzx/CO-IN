@@ -2,7 +2,7 @@ from py2neo import Graph
 
 
 class Database(object):
-    def __init__(self, uri="bolt://39.97.124.144:7687", user="neo4j", password="123456"):
+    def __init__(self, uri="bolt://172.16.20.147:7687", user="neo4j", password="secret"):
         self.graph = Graph(uri, auth=(user, password))
 
     # def __del__(self):
